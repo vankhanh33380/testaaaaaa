@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10px">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10px">
+            <TextView
+                android:id="@+id/ma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mã xe máy: "
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/maxm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20sp"
+                android:layout_toEndOf="@+id/ma"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ten"
+                android:text="Tên xe máy: "
+                android:layout_below="@+id/ma"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/tenxm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text=""
+                android:layout_toEndOf="@+id/ten"
+                android:layout_below="@+id/ma"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sdt"
+                android:text="giá bán: "
+                android:textSize="20sp"
+                android:layout_below="@id/ten"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/giaban"
+                android:textSize="20sp"
+                android:layout_below="@+id/ten"
+                android:layout_toEndOf="@+id/sdt"
+                android:text=""/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

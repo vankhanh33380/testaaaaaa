@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm xe máy"
+        android:textSize="30sp"
+        android:textColor="#FF1100"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textStyle="bold"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtTenXM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên Xe máy"
+            android:textSize="20sp"
+            android:padding="10dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtGiaXM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Giá Xe máy"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="add"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:backgroundTint="#12E61B"/>
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="back"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:backgroundTint="#12E61B"/>
+
+</LinearLayout>
